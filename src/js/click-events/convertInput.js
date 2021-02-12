@@ -8,7 +8,7 @@ export const convertInput = () => {
       const rate = document.getElementById('input-rate').value;
       (async () => {
         const data = await convertCurrency(rate, amount);
-        displayResponse(data);
+        document.getElementById('output').innerHTML = displayResponse(data);
       })();
     }
   );
