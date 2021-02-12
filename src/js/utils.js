@@ -1,9 +1,9 @@
-export const currencyConvert = (amount, rate) => amount * rate;
+export const rateExchange = (amount, rate) => amount * rate;
 
 export const isValid = (input, object) => {
   let isKey = false;
   for (let k of Object.keys(object)){
-    if (k == input) {
+    if (k == input.toUpperCase()) {
       isKey = true;
     }
   }
