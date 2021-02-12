@@ -1,8 +1,8 @@
 import '../css/styles.css';
-// import {convertCurrency} from './convertCurrency.js';
+import {convertInput} from './click-events/convertInput.js';
 
-document.addEventListener('click', () => {
-  '';
+document.addEventListener('DOMContentLoaded', () => {
+  convertInput();
 });
 
 
