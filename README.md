@@ -37,6 +37,9 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
 * Webpack ```4.39.3```
 * Babel ```7.6.4```
 * Eslint ```6.3.0```
+* Dotenv-webpack: ```6.0.0```
+* css-loader: ```3.2.0```
+
 
 * * *
 # Specs
@@ -69,11 +72,12 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
   *  From [wikipedia]( https://en.wikipedia.org/wiki/Webpack ) : \
     "webpack is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included. webpack takes modules with dependencies and generates static assets representing those modules."
 ***
+## Installation :
 
-## Installation : 
-### Want to see this webpage now?
+###  Heads Up! This app requires an api key to function please fallow the instructions closely!
 
-* Go to ( https://github.com/dcouch440/solar-age-calculator ).
+
+* Go to ( https://github.com/dcouch440/currency-exchanger ).
 
 *  Navigate to the code button on the github website.\
 ![Code button](/img/README/code.PNG)
@@ -92,7 +96,7 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
 - Once you have chosen your desired directory use the command.
 
 ```bash 
-git clone https://github.com/dcouch440/solar-age-calculator.git
+git clone https://github.com/dcouch440/currency-exchanger
 ```
 
 <div 
@@ -129,20 +133,28 @@ git clone https://github.com/dcouch440/solar-age-calculator.git
 ``` bash
 code .
 ```
+Now visit ( https://www.exchangerate-api.com/ ).\
+![exchange rate](/img/README/exchange-rate.PNG)
+Fallow these instructions after you have your key 
+* After you have your key make a file named .env in the main directory of this app 
+* within the .env do the fallowing.
+```bash
+API_KEY=Key-Here
+```
+* Add your Api key after the = and nothing else. Check to make sure there are no quotes, brackets or braces of any kind!
 
 * Now run the fallowing code in the terminal you started with or feel free to use the terminal of the code editor you are using. Just make sure you are within the project directory! 
 
 ```bash
 npm install
 ```
-* Then
+* Then run
 
 ```bash
-npm start
+npm run start
 ```
 
-
-
+* Thats it your ready to go!
 # Addition Comments:
 * Created on 2/12/21
 
