@@ -1,4 +1,4 @@
-import {convertCurrency} from '../convertCurrency.js';
+import {convertCurrency} from '../currency-service/convertCurrency.js';
 import {displayResponse} from '../api-components/displayResponse.js';
 
 export const convertInput = () => {

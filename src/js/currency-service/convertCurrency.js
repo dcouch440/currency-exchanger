@@ -1,5 +1,5 @@
-import {CurrencyService} from './services/currency-service.js';
-import * as utils from './utils.js';
+import {CurrencyService} from './currency-service.js';
+import * as utils from '../utils.js';
 
 export const convertCurrency = async (inputRate, amount) => {
   inputRate = inputRate.toUpperCase();
