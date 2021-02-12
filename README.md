@@ -128,7 +128,7 @@ git clone https://github.com/dcouch440/currency-exchanger
 code .
 ```
 Now visit ( https://www.exchangerate-api.com/ ).\
-![exchange rate](/img/README/exchange-rate.PNG)
+<img src="img/README/exchange-rate.PNG">
 Fallow these instructions after you have your key 
 * After you have your key make a file named .env in the main directory of this app 
 * within the .env do the fallowing.
