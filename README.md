@@ -127,12 +127,15 @@ git clone https://github.com/dcouch440/currency-exchanger
 ``` bash
 code .
 ```
-Now visit ( https://www.exchangerate-api.com/ ).\
-<img src="img/README/exchange-rate.PNG">
+Now visit ( https://www.exchangerate-api.com/ ).
+<div>
+  <img src="img/README/exchange-rate.png">
+</div>
 Fallow these instructions after you have your key 
 * After you have your key make a file named .env in the main directory of this app 
 * within the .env do the fallowing.
-```bash
+
+```
 API_KEY=Key-Here
 ```
 * Add your Api key after the = and nothing else. Check to make sure there are no quotes, brackets or braces of any kind!
