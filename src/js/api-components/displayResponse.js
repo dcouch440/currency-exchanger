@@ -1,8 +1,9 @@
-export const displayResponse = ({current, updated, toUpdate, exchangedRate, currencyFound, invalidInput}) => {
+export const displayResponse = ({updated, inputRate, toUpdate, exchangedRate, exchangeRate, currencyFound, invalidInput}) => {
   if (currencyFound) {
     return `
       <div>
-        <div id="updated-rate">Current exchange rate ${exchangedRate} ${current}</div>
+        <div id="updated-rate">Value after exchange ${exchangedRate} ${inputRate}</div>
+        <div id="current-rate">Current exchange rate ${exchangeRate}</div>
         <div id="updated-date">Last update ${updated}</div>
         <div id="next-update">Next update ${toUpdate}</div>
       </div>
