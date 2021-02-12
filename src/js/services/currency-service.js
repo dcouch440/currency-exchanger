@@ -2,7 +2,8 @@ import {checkFetch} from './checkFetch.js';
 
 export class CurrencyService {
   static async receive() {
-    try {
+    try 
+    {
       const returnData = (await this.request());
       const {
         base_code: current, 
@@ -11,15 +12,18 @@ export class CurrencyService {
         conversion_rates: rate
       } = returnData;
       return {current, updated, toUpdate, rate};
-    } catch (error) {
+    } catch (error) 
+    {
       console.log(error);
     }
   }
   static async request() {
     const url = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`;
-    try {
+    try 
+    {
       return (await fetch(url).then(checkFetch)).json();
-    } catch (err) {
+    } catch (err) 
+    {
       console.log('Error has occurred ' + err);
     }
   }

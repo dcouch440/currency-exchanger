@@ -11,6 +11,7 @@ export const convertCurrency = async (inputRate, amount) => {
       return {
         ...service,
         exchangedRate: utils.rateExchange(amount, service.rate[inputRate]).toFixed(2),
+        invalidInput:  null,
         currencyFound: true
       };
     } else 

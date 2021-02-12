@@ -1,4 +1,5 @@
 import {convertCurrency} from '../convertCurrency.js';
+import {displayResponse} from '../api-components/displayResponse.js';
 
 export const convertInput = () => {
   return document.getElementById('submit-amount').addEventListener(
@@ -7,8 +8,7 @@ export const convertInput = () => {
       const rate = document.getElementById('input-rate').value;
       (async () => {
         const data = await convertCurrency(rate, amount);
-        console.log(data);
-        
+        displayResponse(data);
       })();
     }
   );
