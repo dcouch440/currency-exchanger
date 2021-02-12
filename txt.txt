@@ -1,0 +1,3 @@
+-input field
+-multiple select object that handles string input, up case string,
+-conversion for at least 5
