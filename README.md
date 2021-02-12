@@ -27,24 +27,19 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
 * Git and Github
 * JavaScript
 ### Dev Dependencies
-* Jest ```24.9.0```
 * Webpack ```4.39.3```
 * Babel ```7.6.4```
 * Eslint ```6.3.0```
 * Dotenv-webpack: ```6.0.0```
 * css-loader: ```3.2.0```
-
+* html-loader: ```0.5.5```
+# Recourses 
+* This app uses a currency exchange api by the name of exchange rate api.
+* see (https://www.exchangerate-api.com/) for more info. 
 
 * * *
 # Specs
 
-## About Jest:
-  #### This app:
-  *  Jest is used in this app to test segregated sections of code to ensure things are working correctly.
-  #### What is Jest?
-  *  From [wikipedia]( https://en.wikipedia.org/wiki/Jest_(JavaScript_framework) ) : \
-    "Jest is a JavaScript testing framework maintained by Facebook, Inc. designed and built by Christoph Nakazawa with a focus on simplicity and support for large web applications. It works with projects using Babel, TypeScript, Node.js, React, Angular, Vue.js and Svelte."
-***
 ## About Babel:
   #### This app:
   *  Babel is used in this application for jest imports.
@@ -65,6 +60,9 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
   #### What is webpack?
   *  From [wikipedia]( https://en.wikipedia.org/wiki/Webpack ) : \
     "webpack is an open-source JavaScript module bundler. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included. webpack takes modules with dependencies and generates static assets representing those modules."
+## About html-loader:
+  #### This app
+  * html-loader is used to handle images in the html file.
 ***
 ## Installation :
 
