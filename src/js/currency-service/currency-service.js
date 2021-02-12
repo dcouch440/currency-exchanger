@@ -24,6 +24,7 @@ export class CurrencyService {
       return (await fetch(url).then(checkFetch)).json();
     } catch (err) 
     {
+      document.getElementById('output').innerHTML = `Oops! Something went wrong: ${err}`;
       console.log('Error has occurred ' + err);
     }
   }
