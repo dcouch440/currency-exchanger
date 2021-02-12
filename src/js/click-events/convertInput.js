@@ -6,16 +6,9 @@ export const convertInput = () => {
       const amount = document.getElementById('input-amount').value;
       const rate = document.getElementById('input-rate').value;
       (async () => {
-        const {
-          current, 
-          exchangedRate, 
-          toUpdate, 
-          updated
-        } = await convertCurrency(rate, amount);
-        document.getElementById('current').textContent = current;
-        document.getElementById('exchange-rate').textContent = exchangedRate;
-        document.getElementById('to-update').textContent = toUpdate;
-        document.getElementById('updated').textContent = updated;
+        const data = await convertCurrency(rate, amount);
+        console.log(data);
+        
       })();
     }
   );
