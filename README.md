@@ -16,14 +16,8 @@
 - remove non needed depends
  -->
 * * *
-
 ## Description  
 Currency exchange app using the exchange rate api. Users can enter an amount and see comparable prices to the amount entered!
-* * *
-## Specs
-
-
-* * *
 
 * * *
 
