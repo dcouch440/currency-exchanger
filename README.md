@@ -2,19 +2,7 @@
 #### Created By: David Couch
 
 #### *Currency Exchange App*
-<!-- Check list
-- Project Name
-- Author
-- Brief Description
-- Description
-- Specs
-- Link in gh-pages
-- Project repo
-- git clone repo link
-- date
 
-- remove non needed depends
- -->
 * * *
 ## Description  
 Currency exchange app using the exchange rate api. Users can enter an amount and see comparable prices to the amount entered!
@@ -27,14 +15,16 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
 * Git and Github
 * JavaScript
 ### Dev Dependencies
-* Webpack ```4.39.3```
-* Babel ```7.6.4```
-* Eslint ```6.3.0```
-* Dotenv-webpack: ```6.0.0```
+* webpack ```4.39.3```
+* babel ```7.6.4```
+* eslint ```6.3.0```
+* dotenv-webpack: ```6.0.0```
 * css-loader: ```3.2.0```
 * html-loader: ```0.5.5```
+* file-loader: ```1.1.6```
+
 # Recourses 
-* This app uses a currency exchange api by the name of exchange rate api.
+* This app uses a currency exchange api by the name of ExchangeRate-Api.
 * see (https://www.exchangerate-api.com/) for more info. 
 
 * * *
@@ -63,6 +53,16 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
 ## About html-loader:
   #### This app
   * html-loader is used to handle images in the html file.
+## About file-loader:
+  #### This app
+  * file-loader is used to handle image imports within the javascript.
+## About css-loader:
+  #### This app
+  * css-loader is used to handle the css while bundling webpack.
+## About dotenv-webpack:
+  #### This app
+  * dotenv-webpack is used to create an environmental variable to be able to use api keys or sensitive data without revealing it within the commit history.
+
 ***
 ## Installation :
 
@@ -88,7 +88,7 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
 - Once you have chosen your desired directory use the command.
 
 ```bash 
-git clone https://github.com/dcouch440/currency-exchanger
+git clone https://github.com/dcouch440/currency-exchanger.git
 ```
 
 <div 
@@ -126,11 +126,10 @@ git clone https://github.com/dcouch440/currency-exchanger
 code .
 ```
 Now visit ( https://www.exchangerate-api.com/ ).
-<div>
-  <img src="img/README/exchange-rate.png">
-</div>
-Fallow these instructions after you have your key 
+
+* Fallow these instructions after you have your key 
 * After you have your key make a file named .env in the main directory of this app 
+
 * within the .env do the fallowing.
 
 ```
@@ -183,8 +182,6 @@ $ npm install webpack-dev-server@3.8.0 --save-dev
 $ npm install eslint@6.3.0 --save-dev
 
 $ npm install eslint-loader@3.0.0 --save-dev
-
-$ npm install jest@24.9.0 --save-dev
 
 $ npm install @babel/core@7.6.4 --save-dev
 
