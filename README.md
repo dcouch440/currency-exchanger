@@ -189,9 +189,9 @@ $ npm install @babel/plugin-transform-modules-commonjs@7.6.0 --save-dev
 
 $ npm install dotenv-webpack --save-dev
 
-npm install file-loader@1.1.6 --save-dev
+$ npm install file-loader@1.1.6 --save-dev
 
-npm install html-loader@0.5.5 --save-dev
+$ npm install html-loader@0.5.5 --save-dev
 ```
 * * *
 
