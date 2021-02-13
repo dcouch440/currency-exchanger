@@ -32,7 +32,7 @@ Currency exchange app using the exchange rate api. Users can enter an amount and
 
 ## About Babel:
   #### This app:
-  *  Babel is used in this application for jest imports.
+  *  Babel is used in this application for converting imports.
   #### What is Babel?
   *  From [wikipedia]( https://en.wikipedia.org/wiki/Babel_(transcompiler) ) : \
     "Babel is a free and open-source JavaScript transcompiler that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript that can be run by older JavaScript engines. Babel is a popular tool for using the newest features of the JavaScript programming language."
