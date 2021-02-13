@@ -1,8 +1,8 @@
 import '../css/styles.css';
-import {convertInput} from './click-events/convertInput.js';
+import {convertInputs} from './click-events/convertInputs.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  convertInput();
+  convertInputs();
 });
 
 
