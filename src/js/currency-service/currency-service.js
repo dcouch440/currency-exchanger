@@ -6,12 +6,11 @@ export class CurrencyService {
     {
       const returnData = (await this.request());
       const {
-        base_code: current,
         time_last_update_utc: updated,
         time_next_update_utc: toUpdate,
         conversion_rates: rate
       } = returnData;
-      return {current, updated, toUpdate, rate};
+      return {updated, toUpdate, rate};
     } catch (error) 
     {
       console.log(error);
