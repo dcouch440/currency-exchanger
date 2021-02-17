@@ -4,15 +4,20 @@ export class CurrencyService {
   static async receive() {
     try 
     {
-      const returnData = (await this.request());
+      const request = (await this.request());
+      if (request.result === "error") 
+      {
+        throw new Error(request['error-type'])
+      }
       const {
         time_last_update_utc: updated,
         time_next_update_utc: toUpdate,
         conversion_rates: rate
-      } = returnData;
+      } = request;
       return {updated, toUpdate, rate};
     } catch (error) 
     {
+      document.getElementById('output').innerHTML = `Oops! Something went wrong... ${error}`;
       console.log(error);
     }
   }
@@ -21,10 +26,10 @@ export class CurrencyService {
     try
     {
       return (await fetch(url).then(checkFetch)).json();
-    } catch (err)
+    } catch (error)
     {
-      document.getElementById('output').innerHTML = `Oops! Something went wrong: ${err}`;
-      console.log('Error has occurred ' + err);
+      document.getElementById('output').innerHTML = `Oops! Something went wrong: ${error}`;
+      console.log('Error has occurred ' + error);
     }
   }
 }
