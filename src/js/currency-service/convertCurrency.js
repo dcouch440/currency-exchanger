@@ -13,7 +13,7 @@ export const convertCurrency = async (inputRate, amount) => {
         exchangedRate: utils.rateExchange(amount, service.rate[inputRate]).toFixed(2),
         exchangeRate: service.rate[inputRate],
         inputRate,
-        invalidInput:  null,
+        invalidInput:  inputRate,
         currencyFound: true
       };
     } else 
