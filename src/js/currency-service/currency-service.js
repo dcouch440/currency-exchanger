@@ -7,7 +7,7 @@ export class CurrencyService {
       const request = await this.request();
       if (request.result === "error") 
       {
-        throw new Error(request['error-type'])
+        throw new Error(request['error-type']);
       }
       const {
         time_last_update_utc: updated,
