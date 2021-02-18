@@ -1,4 +1,5 @@
 export const displayResponse = ({updated, inputRate, toUpdate, exchangedRate, exchangeRate, currencyFound, invalidInput}) => {
+  const errorInputResponse = invalidInput.length === 0 ? 'No input' : invalidInput + ' is not a valid input';
   if (currencyFound) {
     return `
       <div>
@@ -11,7 +12,7 @@ export const displayResponse = ({updated, inputRate, toUpdate, exchangedRate, ex
   } else {
     return `
       <div>
-        <div id="updated=rate">${exchangedRate}: ${invalidInput.length === 0 ? 'No input' : invalidInput + ' is not a valid input'}!</div>
+        <div id="updated-rate">${exchangedRate}: ${errorInputResponse}!</div>
       </div>
     `;
   }
