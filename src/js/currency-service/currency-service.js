@@ -4,7 +4,7 @@ export class CurrencyService {
   static async receive() {
     try 
     {
-      const request = (await this.request());
+      const request = await this.request();
       if (request.result === "error") 
       {
         throw new Error(request['error-type'])
